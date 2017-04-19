@@ -11,30 +11,31 @@
                 <img src="http://placehold.it/100x100" alt="Nёrds">
             </div>
             <nav class="main-navigation">
-                <ul>
-                <li><a href="#">Студия</a></li>
-                <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="#">Контакты</a></li>
+                <ul class="shop-navigation">
+                    <li class="element-shop-navigation1"><a class="link-studio" href="#">Студия</a></li>
+                    <li class="element-shop-navigation2"><a class="link-customers" href="#">Клиенты</a></li>
+                    <li class="element-shop-navigation3"><a class="link-shop" href="#">Магазин</a></li>
+                    <li class="element-shop-navigation4"><a class="link-contacts" href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="block-cart">
-                <a class="cart" href="#">Корзина</a>
+            <div class="main-basket">
+                <a class="link-basket" href="#">Корзина</a>
             </div>
-            <div class="title-header">
+            <div class="main-title">
                 <h1 class="title">Магазин готовых макетов</h1>
             </div>
         </div>
     </header>
     <main class="content">
         <aside class="filters">
-            <form action="#" method="post">
+            <form class="filters-form" action="#" method="post">
                 <div class="filters-range">
-                    <h2>Стоимость:</h2>
+                    <h2 class="filters-range-title">Стоимость:</h2>
                     <div class="range">
-                        <div class="range-line"></div>
-                        <div class="range-toggle-min"></div>
-                        <div class="range-toggle-max"></div>
+                        <div class="range-line">
+                            <div>
+                            </div>
+                        </div>
                     </div>
                     <div class="price-controls">
                         <label>от<input class="min-price" type="text" value="0"></label>
@@ -42,57 +43,53 @@
                     </div>
                 </div>
                 <div class="filter-grid">
-                    <h2>Сетка:</h2>
-                    <ul>
-                    <li>
-                    <input type="radio" name="item-1" value="1" checked>
-                    <label>Адаптивная</label>
-                    </li>
-                    <li>
-                    <input type="radio" name="item-2" value="2">
-                    <label>Фиксированная</label>
-                    </li>
-                    <li>
-                    <input type="radio" name="item-3" value="3">
-                    <label>Резиновая</label>
-                    </li>
-                    </ul>
-                </div>
+                    <h2 class="filter-grid-title">Сетка:</h2>
+                    <label class="filter-grid-adaptive">
+                        <input class="filter-grid-label-adaptive" type="radio" name="item-1" value="1" checked>
+                        <span class="filter-grid-name-adaptive">Адаптивная</span>
+                    </label>
+                    <label class="filter-grid-fixed">
+                        <input class="filter-grid-label-fixed" type="radio" name="item-2" value="2">
+                        <span class="filter-grid-name-fixed">Фиксированная</span>
+                    </label>
+                    <label class="filter-grid-rubber">
+                        <input class="filter-grid-label-rubber" type="radio" name="item-3" value="3">
+                        <span class="filter-grid-name-fixed">Резиновая</span>
+                    </label>
+                    </div>
                 <div class="filter-features">
-                    <h2>Особенности:</h2>
-                    <ul>
-                    <li>
-                    <input type="checkbox" id="slider" checked>
-                    <label for="slider">Слайдер</label>
-                    </li>
-                    <li>
-                    <input type="checkbox" id="block-features">
-                    <label for="block-features">Блок преимуществ</label>
-                    </li>
-                    <li>
-                    <input type="checkbox" id="news" checked>
-                    <label for="news">Новости</label>    
-                    </li>
-                    <li>
-                    <input type="checkbox" id="galery">
-                    <label for="galery">Галерея</label>    
-                    </li>
-                    <li>
-                    <input type="checkbox" id="basket">
-                    <label for="basket">Корзина</label>    
-                    </li>
-                    </ul>   
+                    <h2 class="filter-features-title">Особенности:</h2>
+                    <label class="filter-features-slider">
+                        <input class="filter-features-label-slider" type="checkbox" id="slider" checked>
+                        <span class="filter-features-name-slider">Слайдер</span>
+                    </label>
+                    <label class="filter-features-advantage">
+                        <input class="filter-features-label-advantage" type="checkbox" id="advantage">
+                        <span class="filter-features-name-advantage">Блок преимуществ</span>
+                    </label>
+                    <label class="filter-features-news">
+                        <input class="filter-features-label-news" type="checkbox" id="news" checked>
+                        <span class="filter-features-name-news">Новости</span>
+                    </label>    
+                    <label class="filter-features-gallery">
+                        <input class="filter-features-label-gallery" type="checkbox" id="gallery">
+                        <span class="filter-features-name-gallery">Галерея</span>
+                    </label>    
+                    <label class="filter-features-basket">
+                        <input class="filter-features-label-basket" type="checkbox" id="basket">
+                        <span class="filter-features-name-backet">Корзина</span>
+                    </label> 
                 </div>
-                <button class="btn" type="submit">Показать</button>  
+                <button class="show-btn" type="submit">Показать</button>  
             </form>
         </aside>
         <section class="catalog-list">
             <div class="catalog-list-sort">
-                <h2>Сортировать:</h2>
-                <ul>
-                <li><a class="sort-price" href="#">По цене</a></li>
-                <li><a class="sort-type" href="#">По типу</a></li>
-                <li><a class="sort-name" href="#">По названию</a></li>
+                <h2 class="catalog-list-sort-title">Сортировать:</h2>
+                <ul class="sort-list">
+                    <li class="sort-price"><a class="sort-price-link" href="#">По цене</a></li>
+                    <li class="sort-type"><a class="sort-type-link" href="#">По типу</a></li>
+                    <li class="sort-name"><a class="sort-name-link" href="#">По названию</a></li>
                 </ul>
             </div>
             <div class="catalog-list-icon">
@@ -101,46 +98,46 @@
             </div>
             <article class="catalog-sedona">
                 <div class="catalog-image">
-                    <img src="http://placehold.it/100x100" alt=""> 
+                    <img class="catalog-sedona-img" src="http://placehold.it/100x100" alt="Sedona"> 
                 </div>
-                <div class="catalog-text">
-                    <h3>Sedona</h3>
-                    <p>Информационный сайт<br>для туристов</p>
-                    <a href="#" class="btn">9900 Р.</a>
+                <div class="catalog-sedona-container">
+                    <h2 class="catalog-sedona-title">Sedona</h2>
+                    <p class="catalog-sedona-text">Информационный сайт для туристов</p>
+                    <a class="catalog-sedona-btn-price" href="#" >9900 Р.</a>
                 </div>                                                    
             </article>
             <article class="catalog-pink">
                 <div class="catalog-image">
-                    <img src="http://placehold.it/100x100" alt=""> 
+                    <img class="catalog-pink-img" src="http://placehold.it/100x100" alt="Pink"> 
                 </div>                                  
             </article>
             <article class="catalog-barbershop">
                 <div class="catalog-image">
-                    <img src="http://placehold.it/100x100" alt=""> 
+                    <img class="catalog-barbershop-img" src="http://placehold.it/100x100" alt="Barbershop"> 
                 </div>                                
-    </article>
+            </article>
             <article class="catalog-mishka">
                 <div class="catalog-image">
-                    <img src="http://placehold.it/100x100" alt=""> 
+                    <img class="catalog-mishka-img" src="http://placehold.it/100x100" alt="Mishka"> 
                 </div>                                
             </article>
             <article class="catalog-aplus">
                 <div class="catalog-image">
-                    <img src="http://placehold.it/100x100" alt=""> 
+                    <img class="catalog-aplus-img" src="http://placehold.it/100x100" alt="Aplus"> 
                 </div>                                
             </article>
             <article class="catalog-kvast">
                 <div class="catalog-image">
-                    <img src="http://placehold.it/100x100" alt=""> 
+                    <img class="catalog-kvast-img" src="http://placehold.it/100x100" alt="Kvast"> 
                 </div>                                
             </article>
         </section>
         <section class="catalog-pages">   
             <div class="pages">
-                <a href="#" class="btn">1</a>
-                <a href="#" class="btn">2</a>
-                <a href="#" class="btn">3</a>
-                <a href="#" class="btn">Следующая</a>
+                <a class="btn btn-1">1</a>
+                <a class="btn btn-2">2</a>
+                <a class="btn btn-3">3</a>
+                <a class="btn btn-next">Следующая</a>
             </div>     
         </section>
     </main>
@@ -148,17 +145,14 @@
         <div class="container">
             <section class="footer-map">
                 <div class="map">
-                    <img src="http://placehold.it/100x100" alt="">
+                    <img class="footer-map-image" src="http://placehold.it/100x100" alt="Map">
                 </div>
-                <div class="marker">
-                    <img src="http://placehold.it/100x100" alt="">	
-                </div>
-                <div class="contacts">
-                    <p>NЁRDS DESIGN STUDIO <br>
-                    191186, Санкт-Петербург,<br>
-                    ул. Б. Конюшенная, д.19/8 <br>
-                    Телефон: +7 (812) 275-75-75<br>
-                    <a href="#" class="btn">Напишите нам</a></p>
+                <div class="footer-contacts">
+                    <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
+                    <p class="contacts-text">191186, Санкт-Петербург,
+                    ул. Б. Конюшенная, д.19/8 
+                    Телефон: +7 (812) 275-75-75
+                    <a class="contacts-btn" href="#" >Напишите нам</a></p>
                 </div>         		
             </section>
             <section class="footer-social">
@@ -166,11 +160,11 @@
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             </section>
-            <section class="footer-friedship">
-                <p>Давайте дружить, это выгодно!</p>
-                <p>Скидка 10% для друзей из социальных сетей!</p>	
+            <section class="footer-friendship">
+                <span class="friendship-title">Давайте дружить, это выгодно!</span>
+                <p class="friendship-text">Скидка 10% для друзей из социальных сетей!</p>	
             </section>	
         </div>
     </footer>
 </body>
-</html> 
+</html>  
