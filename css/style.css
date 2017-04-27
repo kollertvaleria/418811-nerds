@@ -1,76 +1,188 @@
 body {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 18px;
     color: #000000;
-    font-weight: normal;
-    font-family: "Roboto", "PT Sans", sans-serif;
+    font-weight: 400;
+    font-family: "Roboto", "Arial", sans-serif;
     text-transform: none;
+    text-align: left;
 }
-.fontgroup1 {
+.navigation-link {
+    color: #000000;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.basket-link {
+    color: #000000;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: right;
+}
+.slider-title {
     font-size: 55px;
     line-height: 55px;
+    font-weight: 500;
 }
-
-.fontgroup2 {
+.slider-btn {
+    color: #ffffff;
+    font-weight: 500;
+}
+.slider-text{
+    line-height: 24px;
+    color: #283136;
+}
+.feat-title{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.feat-btn {
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center; 
+}
+.feat-text {
+    line-height: 24px;
+    color: #283136;
+}
+.left-title1 {
     font-size: 45px;
     line-height: 45px;
+    font-weight: 500;
 }
-.fontgroup2-element1 {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.fontgroup3 {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: bold;
-}
-.fontgroup4 {
-    font-size: 24px;
+.left-text {
     line-height: 24px;
-    font-weight: bold;
+    color: #283136;
+}
+.left-title2 {
+    line-height: 24px;
+    color: #283136;
+    font-weight: 700;
     text-transform: uppercase;
 }
-.fontgroup5 {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: bold;
+.about-us-element {
+    line-height: 24px;
+    color: #283136;
+}
+.table-title {
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.table-cell1 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
     text-transform: uppercase;
 }
-.fontgroup6 {
-    font-size: 16px;
-    line-height: 16px;
+.table-cell2 {
+    color: #283136;
+}
+.table-percent {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
     text-transform: uppercase;
 }
-.fontgroup6-element1 {
+.address-btn {
     color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
 }
-.fontgroup6-element2 {
-    line-height: 24px;
-    color: #283136;
+.address-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
-.fontgroup6-element3 {
-    font-weight: bold;
-}
-.fontgroup6-element4 {
-    line-height: 18px;
-    color: #283136;
-}
-.fontgroup6-element5 {
-    line-height: 18px;
+.address-text {
     color: #666666;
 }
-.fontgroup6-element6 {
+.shares-title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.shares-text {
+    line-height: 22px;
     color: #444444;
 }
-.fontgroup6-element7 {
+.catalog-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    text-align: center;
+}
+.cost-title,
+.grid-title,
+.features-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.label-text,
+.features-text {
     line-height: 20px;
     color: #283136;
 }
-.fontgroup6-element8 {
+.before-after {
+    line-height: 20px;
     color: #283136;
-}
-.fontgroup7 {
-    font-size: 14px;
-    line-height: 14px;
     text-transform: uppercase;
+}
+.from-to {
+    line-height: 20px;
+    color: #283136;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sorting-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.sort-link {
+    color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.range-btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product-name {
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product-price {
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+}
+.product-text {
+    color: #666666;
+    text-align: center;
+}
+.gallery-btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+.social-circle {
+ width: 100px;
+ height: 100px;
+ background-color: gray;
+ -moz-border-radius: 50px;
+ -webkit-border-radius: 50px;
+ border-radius: 50px;
 }
