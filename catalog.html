@@ -19,7 +19,7 @@
                     <li class="navigation-element"><a class="navigation-link" href="#">Контакты</a></li>
                 </ul>
                 <div class="navigation-basket">
-                    <img class="basket-img" src="img/icon_basket.png" width="15" height="30" alt="Корзина">
+                    <img class="basket-img" src="img/icon-basket.png" width="15" height="15" alt="Корзина">
                     <a class="basket-link" href="#">Корзина</a>
                 </div>
             </nav>
@@ -29,173 +29,165 @@
         </div>
     </header>
     <main class="main">
-        <aside class="main-left">
-            <div class="range-cost">
-                <div class="range-line">
-                    <span class="cost-title">Стоимость:</span>
-                    <div class="cost-line"><div><div></div></div></div>
-                </div>
-                <div class="range-price">
-                    <label class="price-label">
-                        <input class="from-to" type="text" value="0">
-                        <span class="before-after">от</span>
-                    </label>
-                    <label class="price-label">
-                        <input class="from-to" type="text" value="15 000">
-                        <span class="before-after">до</span>
-                    </label>
-                </div>
-            </div>
-            <div class="range-grid">
-                <span class="grid-title">Сетка:</span>
-                <form action="#" method="post">
+        <form class="form-left" action="#" method="get">
+            <fildset class="range-cost">
+                <legend class="cost-title">Стоимость:</legend>
+                    <div class="range-line"></div>
+                    <div class="range-price">
+                        <label class="price-label">
+                            <span class="before-after">от</span>
+                            <input class="from-to" type="text" value="0">   
+                        </label>
+                        <label class="price-label">
+                            <span class="before-after">до</span>
+                            <input class="from-to" type="text" value="15 000">
+                        </label>
+                    </div>
+            </fildset>
+            <fildset class="range-grid">
+                <legend class="grid-title">Сетка:</legend>
                     <label class="grid-label">
                         <input class="label-btn" type="radio" name="item-1" value="1" checked>
                         <span class="label-text">Адаптивная</span>
-                    </label>
+                    </label><br>
                     <label class="grid-label">
                         <input class="label-btn" type="radio" name="item-2" value="2">
                         <span class="label-text">Фиксированная</span>
-                    </label>
+                    </label><br>
                     <label class="grid-label">
                         <input class="label-btn" type="radio" name="item-3" value="3">
                         <span class="label-text">Резиновая</span>
-                    </label>
-                </form>
-            </div>
-            <div class="range-features">
-                <span class="features-title">Особенности:</span>
-                <form action="#" method="post">
+                    </label><br>
+            </fildset>
+            <fildset class="range-features">
+                <legend class="features-title">Особенности:</legend>
                     <label class="features-label">
                         <input class="features-btn" type="checkbox" id="slider" checked>
                         <span class="features-text">Слайдер</span>
-                    </label>
+                    </label><br>
                     <label class="features-label">
                         <input class="features-btn" type="checkbox" id="advantage">
                         <span class="features-text">Блок преимуществ</span>
-                    </label>
+                    </label><br>
                     <label class="features-label">
                         <input class="features-btn" type="checkbox" id="news" checked>
                         <span class="features-text">Новости</span>
-                    </label>    
+                    </label><br>    
                     <label class="features-label">
                         <input class="features-btn" type="checkbox" id="gallery">
                         <span class="features-text">Галерея</span>
-                    </label>    
+                    </label><br>    
                     <label class="features-label">
                         <input class="features-btn" type="checkbox" id="basket">
                         <span class="features-text">Корзина</span>
-                    </label>
-                </form>
-            </div>
-            <input class="range-btn" type="submit" value="Показать"> 
-        </aside>
-        <section class="main-right">
-            <div class="range-sorting">
-                <div class="sorting-view">
-                    <span class="sorting-title">Сортировать:</span>
-                    <ul class="sorting-list">
-                        <li class="sorting-element"><a class="sort-link" href="#">По цене</a></li>
-                        <li class="sorting-element"><a class="sort-link" href="#">По типу</a></li>
-                        <li class="sorting-element"><a class="sort-link" href="#">По названию</a></li>
-                    </ul>
+                    </label><br>
+            </fildset>
+            <input class="range-btn" type="submit" value="Показать">
+        </form>
+        <div class="gallery">
+              <form class="form-right" action="#" method="get">
+                    <fildset class="sorting-view">
+                        <legend class="sorting-title">Сортировать:</legend>
+                        <ul class="sorting-list">
+                            <li class="sorting-element"><a class="sort-link" href="#">По цене</a></li>
+                            <li class="sorting-element"><a class="sort-link" href="#">По типу</a></li>
+                            <li class="sorting-element"><a class="sort-link" href="#">По названию</a></li>
+                        </ul>
+                    </fildset>
+                    <div class="sorting-controls">
+                        <a class="arrow-down-link" href="#">
+                            <img class="arrow-down-img" src="img/arrow_down.png" width="13" height="13" alt="По убыванию"> 
+                        </a>
+                        <a class="arrow-up-link" href="#">
+                            <img class="arrow-up-img" src="img/arrow_up.png" width="13" height="13" alt="По возрастанию"> 
+                        </a>
+                    </div>
+            </form>
+            <article class="product-item">
+                <div class="item-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="sorting-controls">
-                    <a class="arrow-down-link" href="#">
-                        <img class="arrow-down-img" src="img/arrow_down.png" width="13" height="13" alt="По убыванию"> 
-                    </a>
-                    <a class="arrow-up-link" href="#">
-                        <img class="arrow-up-img" src="img/arrow_up.png" width="13" height="13" alt="По возрастанию"> 
-                    </a>
+                <img class="product-card" src="img/productcard-Sedona.jpg" width="360" height="576" alt="Седона"> 
+                <div class="product-description">
+                    <h2 class="product-name">Sedona</h2>
+                    <p class="product-text">Информационный сайт для туристов</p>
+                    <a class="product-price" href="#" >9 900 руб.</a>
                 </div>
-            </div>
-            <div class="gallery">
-                <article class="product-item">
-                    <div class="item-header">
-                        <span>dot</span>
-                        <span>dot</span>
-                        <span>dot</span>
-                    </div>
-                    <img class="product-card" src="img/productcard-Sedona.jpg" width="360" height="576" alt="Седона"> 
-                    <div class="product-description">
-                        <h2 class="product-name">Sedona</h2>
-                        <p class="product-text">Информационный сайт для туристов</p>
-                        <a class="product-price" href="#" >9900 Р.</a>
-                    </div>                                                    
-                </article>
-                <article class="product-item">
-                    <div class="item-header">
-                        <span>dot</span>
-                        <span>dot</span>
-                        <span>dot</span>
-                    </div>
-                    <img class="product-card" src="img/productcard-PinkApp.jpg" width="360" height="576" alt="Пинк"> 
-                    <div class="product-description">
-                        <h2 class="product-name">Pink App</h2>
-                        <p class="product-text">Продуктовый лендинг приложения для iOS и Android</p>
-                        <a class="product-price" href="#" >9900 Р.</a>
-                    </div> 
-                </article>
-                <article class="product-item">
-                    <div class="item-header">
-                            <span>dot</span>
-                            <span>dot</span>
-                            <span>dot</span>
-                    </div>
-                    <img class="product-card" src="img/productcard-Barbershop.jpg" width="360" height="576" alt="<Барбершоп"> 
-                    <div class="product-description">
-                        <h2 class="product-name">Barbershop</h2>
-                        <p class="product-text">Сайт салоны красоты. Для мужчин, да.</p>
-                        <a class="product-price" href="#" >9900 Р.</a>
-                    </div> 
-                </article>
-                <article class="product-item">
-                    <div class="item-header">
-                        <span>dot</span>
-                        <span>dot</span>
-                        <span>dot</span>
-                    </div>
-                    <img class="product-card" src="img/productcard-Mishka.jpg" width="360" height="576" alt="Мишка"> 
-                    <div class="product-description">
-                        <h2 class="product-name">Mishka</h2>
-                        <p class="product-text">Интернет-магазин вязаных игрушек.</p>
-                        <a class="product-price" href="#" >9900 Р.</a>
-                    </div> 
-                </article>
-                <article class="product-item">
-                    <div class="item-header">
-                        <span>dot</span>
-                        <span>dot</span>
-                        <span>dot</span>
-                    </div>
-                    <img class="product-card" src="img/productcard-APlus.jpg" width="360" height="576" alt="Аплюс"> 
-                    <div class="product-description">
-                        <h2 class="product-name">A Plus</h2>
-                        <p class="product-text">Лендинг курсов повышения квалификации</p>
-                        <a class="product-price" href="#" >9900 Р.</a>
-                    </div> 
-                </article>
-                <article class="product-item">
-                    <div class="item-header">
-                        <span>dot</span>
-                        <span>dot</span>
-                        <span>dot</span>
-                    </div>
-                    <img class="product-card" src="img/productcard-Kvast.jpg" width="360" height="576" alt="Кваст"> 
-                    <div class="product-description">
-                        <h2 class="product-name">Кваст</h2>
-                        <p class="product-text">Промо-сайт производителя крафтового кваса</p>
-                        <a class="product-price" href="#">9900 Р.</a>
-                    </div> 
-                </article>
-            </div> 
+            </article>
+            <article class="product-item">
+                <div class="item-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img class="product-card" src="img/productcard-PinkApp.jpg" width="360" height="576" alt="Пинк"> 
+                <div class="product-description">
+                    <h2 class="product-name">Pink App</h2>
+                    <p class="product-text">Продуктовый лендинг приложения для iOS и Android</p>
+                    <a class="product-price" href="#" >9 900 руб.</a>
+                </div> 
+            </article>
+            <article class="product-item">
+                <div class="item-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </div>
+                <img class="product-card" src="img/productcard-Barbershop.jpg" width="360" height="576" alt="<Барбершоп"> 
+                <div class="product-description">
+                    <h2 class="product-name">Barbershop</h2>
+                    <p class="product-text">Сайт салоны красоты. Для мужчин, да.</p>
+                    <a class="product-price" href="#" >9 900 руб.</a>
+                </div> 
+            </article>
+            <article class="product-item">
+                <div class="item-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img class="product-card" src="img/productcard-Mishka.jpg" width="360" height="576" alt="Мишка"> 
+                <div class="product-description">
+                    <h2 class="product-name">Mishka</h2>
+                    <p class="product-text">Интернет-магазин вязаных игрушек.</p>
+                    <a class="product-price" href="#" >9 900 руб.</a>
+                </div> 
+            </article>
+            <article class="product-item">
+                <div class="item-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img class="product-card" src="img/productcard-APlus.jpg" width="360" height="576" alt="Аплюс"> 
+                <div class="product-description">
+                    <h2 class="product-name">A Plus</h2>
+                    <p class="product-text">Лендинг курсов повышения квалификации</p>
+                    <a class="product-price" href="#" >9 900 руб.</a>
+                </div> 
+            </article>
+            <article class="product-item">
+                <div class="item-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img class="product-card" src="img/productcard-Kvast.jpg" width="360" height="576" alt="Кваст"> 
+                <div class="product-description">
+                    <h2 class="product-name">Кваст</h2>
+                    <p class="product-text">Промо-сайт производителя крафтового кваса</p>
+                    <a class="product-price" href="#">9 900 руб.</a>
+                </div> 
+            </article>
             <div class="gallery-pages">
                 <a class="gallery-btn">1</a>
                 <a class="gallery-btn">2</a>
                 <a class="gallery-btn">3</a>
                 <a class="gallery-btn">Следующая</a>
-            </div>     
-        </section>
+        </div>  
+        </div>
         <div class="contacts">
             <section class="contact-map">
                 <div id="map" style="">
