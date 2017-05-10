@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Нёрдс: Каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -10,12 +11,14 @@
         <div class="header-content">
             <nav class="header-navigation clearfix">
                 <div class="navigation-logo">
-                    <img class="logo-img" src="img/logo-nerds.png" width="160" height="65" alt="Нёрдс">
+                    <a class="" href="index.html">
+                        <img class="logo-img" src="img/logo-nerds.png" width="160" height="65" alt="Нёрдс">
+                    </a>
                 </div>
                 <ul class="navigation-list list">
                     <li class="navigation-element"><a class="navigation-link link" href="#">Студия</a></li>
                     <li class="navigation-element"><a class="navigation-link link" href="#">Клиенты</a></li>
-                    <li class="navigation-element"><a class="navigation-link link" href="catalog.html">Магазин</a></li>
+                    <li class="navigation-element active"><a class="navigation-link link" href="catalog.html">Магазин</a></li>
                     <li class="navigation-element"><a class="navigation-link link" href="#">Контакты</a></li>
                 </ul>
                 <div class="navigation-basket">
@@ -32,30 +35,30 @@
             <form class="form-left" action="#" method="get">
                 <div class="range-cost">
                     <h2 class="cost-title">Стоимость:</h2>
-                    <div class="range-line"></div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                    </div>
                     <div class="range-price">
-                        <label class="price-label">
-                            <span class="before-after">от</span>
-                            <input class="from-to" type="text" value="0">   
-                        </label>
-                        <label class="price-label">
-                            <span class="before-after">до</span>
-                            <input class="from-to" type="text" value="15 000">
-                        </label>
+                        <label class="min-price"><span>от</span><input class="from-to" type="text" value="0"></label>
+                        <label class="price-label"><span>до</span><input class="from-to" type="text" value="15 000"></label>
                     </div>
                 </div>
                 <div class="range-grid">
                     <h2 class="grid-title">Сетка:</h2>
                     <label class="grid-label">
-                        <input class="label-btn" type="radio" name="item-1" value="1" checked>
+                        <input class="label-btn" type="radio" name="value" value="adaptive" checked>
                         <span class="label-text">Адаптивная</span>
                     </label><br>
                     <label class="grid-label">
-                        <input class="label-btn" type="radio" name="item-2" value="2">
+                        <input class="label-btn" type="radio" name="value" value="fixed">
                         <span class="label-text">Фиксированная</span>
                     </label><br>
                     <label class="grid-label">
-                        <input class="label-btn" type="radio" name="item-3" value="3">
+                        <input class="label-btn" type="radio" name="value" value="rubber">
                         <span class="label-text">Резиновая</span>
                     </label><br>
                 </div>
@@ -89,7 +92,7 @@
                         <div class="sorting-view clearfix">
                             <h2 class="sorting-title">Сортировать:</h2>
                             <ul class="sorting-list list clearfix">
-                                <li class="sorting-element"><a class="sort-link link" href="#">По цене</a></li>
+                                <li class="sorting-element active"><a class="sort-link link" href="#">По цене</a></li>
                                 <li class="sorting-element"><a class="sort-link link" href="#">По типу</a></li>
                                 <li class="sorting-element"><a class="sort-link link" href="#">По названию</a></li>
                             </ul>
@@ -105,61 +108,61 @@
                 </form>
                 <article class="product-item">
                     <div class="item-header">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
                     </div>
                     <img class="product-card" src="img/productcard-Sedona.jpg" width="360" height="576" alt="Седона"> 
                     <div class="product-description">
                         <h2 class="product-name">Sedona</h2>
-                        <p class="product-text">Информационный сайт для туристов</p>
+                        <p class="product-text">Информационный сайт<br> для туристов</p>
                         <a class="product-price link" href="#" >9 900 руб.</a>
                     </div>
                 </article>
                 <article class="product-item">
                     <div class="item-header">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
                     </div>
                     <img class="product-card" src="img/productcard-PinkApp.jpg" width="360" height="576" alt="Пинк"> 
                     <div class="product-description">
                         <h2 class="product-name">Pink App</h2>
-                        <p class="product-text">Продуктовый лендинг приложения для iOS и Android</p>
+                        <p class="product-text">Продуктовый лендинг<br> приложения для iOS и Android</p>
                         <a class="product-price link" href="#" >9 900 руб.</a>
                     </div> 
                 </article>
                 <article class="product-item">
                     <div class="item-header">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
                     </div>
                     <img class="product-card" src="img/productcard-Barbershop.jpg" width="360" height="576" alt="<Барбершоп"> 
                     <div class="product-description">
                         <h2 class="product-name">Barbershop</h2>
-                        <p class="product-text">Сайт салоны красоты. Для мужчин, да.</p>
+                        <p class="product-text">Сайт салоны красоты.<br> Для мужчин, да.</p>
                         <a class="product-price link" href="#" >9 900 руб.</a>
                     </div> 
                 </article>
                 <article class="product-item">
                     <div class="item-header">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
                     </div>
                     <img class="product-card" src="img/productcard-Mishka.jpg" width="360" height="576" alt="Мишка"> 
                     <div class="product-description">
                         <h2 class="product-name">Mishka</h2>
-                        <p class="product-text">Интернет-магазин вязаных игрушек.</p>
+                        <p class="product-text">Интернет-магазин<br> вязаных игрушек.</p>
                         <a class="product-price link" href="#" >9 900 руб.</a>
                     </div> 
                 </article>
                 <article class="product-item">
                     <div class="item-header">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
                     </div>
                     <img class="product-card" src="img/productcard-APlus.jpg" width="360" height="576" alt="Аплюс"> 
                     <div class="product-description">
@@ -170,22 +173,22 @@
                 </article>
                 <article class="product-item">
                     <div class="item-header">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
+                        <span class="item-header-circle"></span>
                     </div>
                     <img class="product-card" src="img/productcard-Kvast.jpg" width="360" height="576" alt="Кваст"> 
                     <div class="product-description">
                         <h2 class="product-name">Кваст</h2>
-                        <p class="product-text">Промо-сайт производителя крафтового кваса</p>
+                        <p class="product-text">Промо-сайт производителя<br> крафтового кваса</p>
                         <a class="product-price link" href="#">9 900 руб.</a>
                     </div> 
                 </article>
                 <div class="gallery-pages clearfix">
-                    <a class="gallery-btn link">1</a>
-                    <a class="gallery-btn link">2</a>
-                    <a class="gallery-btn link">3</a>
-                    <a class="gallery-btn link">Следующая</a>
+                    <a class="gallery-btn link active">1</a>
+                    <a class="gallery-btn link" href="#">2</a>
+                    <a class="gallery-btn link" href="#">3</a>
+                    <a class="gallery-btn link" href="#">Следующая</a>
                 </div>  
             </div>
         </div>
@@ -193,12 +196,12 @@
             <div class="address-content clearfix">
                 <div class="address">
                     <div class="address-text">
-                        <span class="address-title">Nёrds design studio</span>
+                        <h3 class="address-title">Nёrds design studio</h3>
                         <p class="address-text">191186, Санкт-Петербург,
                         ул. Б. Конюшенная, д.19/8</p> 
                         <a class="address-link link" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
                     </div>
-                    <a class="address-btn link" href="#" >Напишите нам</a>
+                    <a class="address-btn link" href="#">Напишите нам</a>
                 </div>
             </div>
         </div>
