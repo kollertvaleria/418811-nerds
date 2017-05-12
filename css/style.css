@@ -110,22 +110,31 @@ body {
 .feat-text {
     line-height: 24px;
     color: #283136;
+    margin: 0;
+    margin-bottom: 16px;
 }
 .left-title1 {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    margin-bottom: 33px;
+    margin: 0;
+    margin-bottom: 34px; 
 }
 .left-text {
     line-height: 24px;
     color: #283136;
+    margin: 0;
 }
 .left-title2 {
     line-height: 24px;
     color: #283136;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
+    margin-top: 43px;
+}
+.about-us-list {
+    margin-top: -2px;
 }
 .about-us-element {
     line-height: 24px;
@@ -168,7 +177,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
-    margin-bottom: 23px;
+    margin: 0;
 }
 .address-text,
 .address-link {
@@ -277,11 +286,9 @@ body {
     font-size: 0;
 }
 .range-price label {
+    width: 50%;
     font-size: 16px;
     display:inline-block;
-}
-.price-label {
-    margin-left: 27px;
 }
 .max-price {
     text-align: right;
@@ -303,6 +310,10 @@ body {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+}
+.sorting-list .active {
+    color: #000000;
+    opacity: 1;
 }
 .sort-link {
     color: #000000;
@@ -419,18 +430,22 @@ body {
     margin-right: 26px;
 }
 .slider {
+    width: 1160px;
     height: 427px;
 }
 .slider-left {
     float: left;
-    width: 380px;
+    width: 550px;
 }
 .slider-btn {
     float: left;
 }
 .slider-img {
-    margin-top: 18px;
     float: right;
+    position: absolute;
+    margin-top: 18px;
+    right: 380px;
+    z-index: 2;
 }
 .main-content {
     width: 1200px;
@@ -447,16 +462,17 @@ body {
     float: left;
     width: 300px;
     margin-right: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 74px;
 }
 .feat:nth-child(3) {
     margin-right: 0px;
 }
 .feat-img {
-    margin-bottom: 2px; 
+    margin-bottom: 24px; 
 }
 .feat-title {
-    margin-bottom: 0px; 
+    margin: 0;
+    margin-bottom: 12px;
 }
 .feat-btn {
     float: left;
@@ -468,6 +484,10 @@ body {
 }
 .left-text {
     margin-bottom: 38px;
+}
+left-title1 {
+    margin: 0;
+    padding: 0;
 }
 .left-title2{
     margin-bottom: 23px;
@@ -486,23 +506,28 @@ body {
 }
 .right-img {
     float: right;
-    margin-top: 10px;
+    position: absolute;
+    top: 1095px;
+    right: 350px;
     margin-bottom: 37px;
+}
+.right-table {
+    margin-top: 210px;
 }
 .table-title {
     margin-left: 9px;
-    margin-bottom: 38px;
+    margin-bottom: 47px;
 }
 .table-cell1 {
-    padding: 0px 10px 0px 9px;
+    padding: 0px 9px 0px 9px;
 }
 .table-cell2 {
-    padding: 18px 0px 0px 10px;
+    padding: 12px 0px 0px 9px;
 }
 .clients {
     float: left;
-    margin-top: 69px;
-    margin-bottom: 88px;
+    margin-top: 66px;
+    margin-bottom: 90px;
     padding: 30px 20px;
 }
 .client-link{
@@ -522,10 +547,9 @@ body {
 .main-contacts {
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-color: #f1efe8;
-    max-height: 418px;
 }
 .address-content {
     width: 1200px;
@@ -535,18 +559,20 @@ body {
 }
 .address {
     float: left;
-    padding: 34px 50px 45px 50px;
+    padding: 50px 50px 45px 50px;
     margin-top: 53px;
     margin-bottom: 48px;
     background: white;
 }
-.address-text {
+.address-window {
     width: 210px;
 }
-
+.address-text {
+    margin-top: 24px;
+}
 .address-btn {
     float: left;
-    margin-top: 39px;
+    margin-top: 38px;
 }
 .address-btn:hover {
     background-color: #e74246;
@@ -559,6 +585,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-bottom: 30px;
     box-sizing: border-box;
 }
 .social-btn {
@@ -591,7 +618,8 @@ body {
 .footer-shares {
     float: left;
     width: 60%;
-    margin-top: 76px;
+    margin: 0;
+    margin-top: 84px;
     margin-left: 53px;
 }
 .catalog-title {
@@ -647,6 +675,10 @@ body {
 .arrow-up-link:active {
     opacity: 1;
 }
+.product-item {
+    height: 617px;
+    width: 360px;
+}
 .product-item:hover .product-description {
   display: block;
 }
@@ -668,6 +700,9 @@ body {
 }
 .product-item:hover .item-header {
     background-color: #4d4d4d;
+}
+.product-card {
+    cursor: pointer;
 }
 .product-description {
     position: absolute;
@@ -691,8 +726,8 @@ body {
 }
 .gallery-pages {
     float: left;
-    margin-bottom: 54px;
-    margin-top: 56px;
+    margin-bottom: 60px;
+    margin-top: 64px;
 }
 .gallery-btn {
     display: inline-block;
@@ -715,7 +750,9 @@ body {
     background-color: white;
     outline-offset: -3px;
 }
-
+.header-sliders input {
+    display: none;
+}
 #btn-1: checked ~ .sliders-navigation label[for="btn-1"]
 #btn-2: checked ~ .sliders-navigation label[for="btn-2"]
 #btn-3: checked ~ .sliders-navigation label[for="btn-3"]{}
@@ -749,6 +786,13 @@ body {
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    opacity: 0.3;
+}
+.modal-content-close:hover {
+    opacity: 1;
+}
+.modal-content-close:active {
+    opacity: 0.1;
 }
 .modal-content-close:before,
 .modal-content-close:after {
@@ -785,17 +829,15 @@ body {
     width: 100%;
 }
 .form-title {
-    margin: 0;
     font-size: 16px;
     line-height: 18px;
     color: #000000;
     font-weight: 400;
-    margin: 0;
-    margin-bottom: 14px; 
 }
 .your-name,
 .your-e-mail {
     width: 335px;
+    margin-top: 14px;
     margin-bottom: 36px;
     color: rgba(68, 68, 68, 0.5);
     padding: 10px;
@@ -805,10 +847,13 @@ body {
 }
 .your-letter {
     width: 734px;
+    resize: none;
     color: rgba(68, 68, 68, 0.5);
     padding: 10px;
     border-color: rgba(68, 68, 68, 0.5);
+    margin-top: 14px;
     margin-bottom: 48px;
+    
 }
 .contact-us-btn {
     color: #ffffff;
@@ -821,6 +866,16 @@ body {
     border: none;
     cursor: pointer;
     margin-bottom: 84px;
+}
+.contact-us-btn:hover {
+    background-color: #e74246;
+}
+.contact-us-btn:active {
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3)
+}
+.modal-content {
+    display: none;
 }
 .clearfix::after {
     content: "";
