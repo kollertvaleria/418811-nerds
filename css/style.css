@@ -473,9 +473,6 @@ body {
     margin-bottom: 23px;
 }
 .about-us-element {
-    list-style-type: none;
-}
-.about-us-element {
     margin-bottom: 24px;
     margin-left: -40px;
 }
@@ -550,18 +547,6 @@ body {
 .address-btn {
     float: left;
     margin-top: 39px;
-}
-.contact-us-btn {
-    color: #ffffff;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 18px 86px;
-    background: #fb565a;
-    margin-top: 20px;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
 }
 .address-btn:hover {
     background-color: #e74246;
@@ -742,6 +727,101 @@ body {
 #btn-2:checked ~ .slides .slider:nth-child(2) {display:block}
 #btn-3:checked ~ .slides .slider:nth-child(3) {display:block}
 
+.modal-content {
+    position: absolute;
+    box-sizing: border-box;
+    top: 1730px;
+    left: 50%;
+    width: 960px;
+    margin-left: -475px;
+    height: 590px;
+    padding: 70px 100px;
+    background-color: #ffffff;
+    box-shadow: 0 25px 70px rgba(0, 1, 1, 0.75)
+}
+.modal-content-close {
+    position: absolute;
+    top: 70px;
+    right: 90px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.modal-content-close:before,
+.modal-content-close:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: #fb565a;
+    border-radius: 1px;
+}
+.modal-content-close:before {
+    transform: rotate(45deg);
+}
+.modal-content-close:after{
+    transform: rotate(-45deg);
+}
+.contact-us-title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.name-form,
+.e-mail-form {
+    display: inline-block;
+    width: 47%;
+}
+.letter-form {
+    display: inline-block;
+    width: 100%;
+}
+.form-title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 14px; 
+}
+.your-name,
+.your-e-mail {
+    width: 335px;
+    margin-bottom: 36px;
+    color: rgba(68, 68, 68, 0.5);
+    padding: 10px;
+}
+.e-mail-form {
+    margin-left: 40px;
+}
+.your-letter {
+    width: 734px;
+    color: rgba(68, 68, 68, 0.5);
+    padding: 10px;
+    border-color: rgba(68, 68, 68, 0.5);
+    margin-bottom: 48px;
+}
+.contact-us-btn {
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 18px 86px;
+    background: #fb565a;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 84px;
+}
 .clearfix::after {
     content: "";
     display: table;
