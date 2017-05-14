@@ -191,16 +191,16 @@ body {
 .shares-text {
     line-height: 22px;
     color: #444444;
-    margin-top: 11px;
+    margin-top: 7px;
 }
 .range-cost {
-    min-height: 250px;
+    min-height: 247px;
 }
 .range-grid {
-    min-height: 174px;
+    min-height: 178px;
 }
 .range-features {
-    min-height: 255px;
+    min-height: 251px;
 }
 .catalog-title {
     font-size: 55px;
@@ -215,7 +215,7 @@ body {
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 .label-text,
 .features-text {
@@ -435,17 +435,15 @@ body {
 }
 .slider-left {
     float: left;
-    width: 550px;
+    width: 390px;
 }
 .slider-btn {
     float: left;
 }
 .slider-img {
     float: right;
-    position: absolute;
     margin-top: 18px;
-    right: 380px;
-    z-index: 2;
+    margin-right: 30px;
 }
 .main-content {
     width: 1200px;
@@ -506,13 +504,8 @@ left-title1 {
 }
 .right-img {
     float: right;
-    position: absolute;
-    top: 1095px;
-    right: 350px;
+    margin-top: -35px;
     margin-bottom: 37px;
-}
-.right-table {
-    margin-top: 210px;
 }
 .table-title {
     margin-left: 9px;
@@ -568,7 +561,7 @@ left-title1 {
     width: 210px;
 }
 .address-text {
-    margin-top: 24px;
+    margin-top: 21px;
 }
 .address-btn {
     float: left;
@@ -619,7 +612,7 @@ left-title1 {
     float: left;
     width: 60%;
     margin: 0;
-    margin-top: 84px;
+    margin-top: 85px;
     margin-left: 53px;
 }
 .catalog-title {
@@ -876,6 +869,74 @@ left-title1 {
 }
 .modal-content {
     display: none;
+}
+.features-btn,
+.label-btn {
+    display: none;
+}
+.features-label,
+.grid-label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+.radio-indicator {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    border: 4px solid #000000;
+    opacity: 0.4;
+}
+.radio-indicator:hover {
+    opacity: 1;
+}
+.label-btn:checked + .radio-indicator:before,
+.label-btn:checked + .radio-indicator:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    top: 5px;
+    left: 5px;
+    background-color: #000000;
+}
+.checkbox-indicator {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: 0;
+    border-radius: 7px;
+    border: 3px solid #000000;
+    opacity: 0.4;
+}
+.checkbox-indicator:hover {
+    opacity: 1;
+}
+.features-btn:checked + .checkbox-indicator:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 5px;
+    top: 9px;
+    left: 1px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+.features-btn:checked + .checkbox-indicator:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 6px;
+    top: 3px;
+    left: 8px;
+    background-color: #000000;
+    transform: rotate(-45deg);
+    box-shadow: 3px 0px 0px 2px rgba(255, 255, 255, 1);
 }
 .clearfix::after {
     content: "";

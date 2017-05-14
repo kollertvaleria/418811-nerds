@@ -17,10 +17,18 @@
                     </a>
                 </div>
                 <ul class="navigation-list list">
-                    <li class="navigation-element"><a class="navigation-link link" href="#">Студия</a></li>
-                    <li class="navigation-element"><a class="navigation-link link" href="#">Клиенты</a></li>
-                    <li class="navigation-element active"><a class="navigation-link link" href="catalog.html">Магазин</a></li>
-                    <li class="navigation-element"><a class="navigation-link link" href="#">Контакты</a></li>
+                    <li class="navigation-element">
+                        <a class="navigation-link link" href="#">Студия</a>
+                    </li>
+                    <li class="navigation-element">
+                        <a class="navigation-link link" href="#">Клиенты</a>
+                    </li>
+                    <li class="navigation-element active">
+                        <a class="navigation-link link" href="catalog.html">Магазин</a>
+                    </li>
+                    <li class="navigation-element">
+                        <a class="navigation-link link" href="#">Контакты</a>
+                    </li>
                 </ul>
                 <div class="navigation-basket">
                     <a class="basket-link link" href="#"><img class="basket-img" src="img/icon-basket.png" width="15" height="15" alt="Корзина">Корзина</a>
@@ -44,22 +52,30 @@
                         <div class="toggle toggle-max"></div>
                     </div>
                     <div class="range-price">
-                        <label class="min-price"><span>от</span><input class="from-to" type="text" value="0"></label>
-                        <label class="max-price"><span>до</span><input class="from-to" type="text" value="15 000"></label>
+                        <label class="min-price">
+                            <span>от</span>
+                            <input class="from-to" type="text" value="0"></label>
+                        <label class="max-price">
+                            <span>до</span>
+                            <input class="from-to" type="text" value="15 000">
+                        </label>
                     </div>
                 </div>
                 <div class="range-grid">
                     <h2 class="grid-title">Сетка:</h2>
                     <label class="grid-label">
                         <input class="label-btn" type="radio" name="value" value="adaptive" checked>
+                        <span class="radio-indicator"></span>
                         <span class="label-text">Адаптивная</span>
                     </label><br>
                     <label class="grid-label">
                         <input class="label-btn" type="radio" name="value" value="fixed">
+                        <span class="radio-indicator"></span>
                         <span class="label-text">Фиксированная</span>
                     </label><br>
                     <label class="grid-label">
                         <input class="label-btn" type="radio" name="value" value="rubber">
+                        <span class="radio-indicator"></span>
                         <span class="label-text">Резиновая</span>
                     </label><br>
                 </div>
@@ -67,22 +83,27 @@
                     <h2 class="features-title">Особенности:</h2>
                     <label class="features-label">
                         <input class="features-btn" type="checkbox" id="slider" checked>
+                        <span class="checkbox-indicator"></span>
                         <span class="features-text">Слайдер</span>
                     </label><br>
                     <label class="features-label">
                         <input class="features-btn" type="checkbox" id="advantage">
+                        <span class="checkbox-indicator"></span>
                         <span class="features-text">Блок преимуществ</span>
                     </label><br>
                     <label class="features-label">
                         <input class="features-btn" type="checkbox" id="news" checked>
+                        <span class="checkbox-indicator"></span>
                         <span class="features-text">Новости</span>
                     </label><br>    
                     <label class="features-label">
                         <input class="features-btn" type="checkbox" id="gallery">
+                        <span class="checkbox-indicator"></span>
                         <span class="features-text">Галерея</span>
                     </label><br>    
                     <label class="features-label">
                         <input class="features-btn" type="checkbox" id="basket">
+                        <span class="checkbox-indicator"></span>
                         <span class="features-text">Корзина</span>
                     </label><br>
                 </div>
@@ -90,14 +111,20 @@
             </form>
             <div class="gallery">
                 <form class="form-right" action="#" method="get">
-                        <div class="sorting-view clearfix">
-                            <h2 class="sorting-title">Сортировать:</h2>
-                            <ul class="sorting-list list clearfix">
-                                <li class="sorting-element"><a class="sort-link link active" href="#">По цене</a></li>
-                                <li class="sorting-element"><a class="sort-link link" href="#">По типу</a></li>
-                                <li class="sorting-element"><a class="sort-link link" href="#">По названию</a></li>
-                            </ul>
-                            <div class="sorting-controls">
+                    <div class="sorting-view clearfix">
+                        <h2 class="sorting-title">Сортировать:</h2>
+                        <ul class="sorting-list list clearfix">
+                            <li class="sorting-element">
+                                <a class="sort-link link active" href="#">По цене</a>
+                            </li>
+                            <li class="sorting-element">
+                                <a class="sort-link link" href="#">По типу</a>
+                            </li>
+                            <li class="sorting-element">
+                                <a class="sort-link link" href="#">По названию</a>
+                            </li>
+                        </ul>
+                        <div class="sorting-controls">
                             <a class="arrow-down-link link" href="#">
                                 <img class="arrow-down-img" src="img/arrow_down.png" width="13" height="13" alt="По убыванию"> 
                             </a>
@@ -105,7 +132,7 @@
                                 <img class="arrow-up-img" src="img/arrow_up.png" width="13" height="13" alt="По возрастанию"> 
                             </a>
                         </div>
-                        </div>
+                    </div>
                 </form>
                 <article class="product-item">
                     <div class="item-header">
